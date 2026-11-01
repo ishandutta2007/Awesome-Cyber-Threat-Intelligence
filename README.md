@@ -1,199 +1,208 @@
-# Awesome-Cyber-Threat-Intelligence
-
-# Awesome-Cyber-Threat-Intelligence
-
-**Top Cyber Threat Intelligence (Opensource) 🌟 Star if you like it! 🌟**
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**
-
-*Focused on Adversary Tracking, IOC Enrichment, Dark Web Monitoring & Self-Hosted Intelligence Platforms*
-
-**Last updated: November 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Cyber Threat Intelligence (CTI)**. These tools enable security teams to collect, enrich, analyze, and operationalize intelligence about adversaries, their infrastructure, and their tactics—from fully managed enterprise platforms with proprietary dark web collection and finished intelligence reports to self-hosted platforms that give organizations control over their intelligence data and sharing communities.
-
-
-
-**Examples** include CrowdStrike Falcon Intelligence, Recorded Future, Mandiant Threat Intelligence, Flashpoint, Palo Alto Unit 42, Microsoft Defender Threat Intelligence, IntSights (Rapid7), ZeroFox, Cybersixgill, and ThreatConnect (the category leaders in commercial space).
-
-
-
-**Open-source emphasis**: This section is expanded with every relevant project for self-hosted threat intelligence, IOC management, and open intelligence sharing. **Critical note**: The open-source CTI landscape is anchored by **MISP** and **OpenCTI**—both are production-grade, widely deployed, and serve different primary purposes (sharing communities vs. knowledge management) . **IntelOwl** provides enrichment, **Yeti** focuses on CTI-DFIR intersection, and **Threat Bus** handles dissemination . No open-source project matches Recorded Future's Intelligence Graph or Mandiant's frontline incident response telemetry, but for intelligence management and sharing, the open-source options are mature.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[CrowdStrike Falcon Intelligence](https://www.crowdstrike.com/)**
-
-  **Threat intelligence integrated with Falcon platform**, named a **Leader in the inaugural Gartner Magic Quadrant for Cyberthreat Intelligence Technologies** (2026) . **Features**: Automatically investigates malware found on endpoints; finds related samples from CrowdStrike's malware search engine; enriches results with customized threat intelligence; provides custom IOCs to share with other security tools; intelligence reporting tells the complete attack story . **Pricing**: **Falcon Go free** (100 devices max, includes Threat Intelligence & Hunting); **Falcon Pro $14.99/device/month**; **Falcon Enterprise $19.99**; **Falcon Complete $59.99–$184.99/device annually**; **Falcon Intelligence Expansion Pack** separate subscription (up to 5,000 files/month) . **Free tier**: Yes, Falcon Go free with threat intelligence. **Best for**: CrowdStrike customers wanting intelligence tightly coupled to endpoint telemetry—**trade-off**: full intelligence depth requires Falcon platform and expansion packs.
-
-
-
-- **[Recorded Future](https://www.recordedfuture.com/)**
-
-  **Intelligence platform** with Intelligence Graph and three packages: **Core** (foundational cyber ops and digital risk protection), **Professional** (adds autonomous threat hunts, continuous monitoring, external intelligence ingestion), **Elite** (adds third-party risk) . All packages include full Intelligence Graph access, Recorded Future AI, integrations, APIs, and Collective Insights—no hidden costs . **Pricing**: **Quote-only**; packages scale with maturity. **Free tier**: Not specified in results. **Best for**: enterprises wanting comprehensive intelligence across cyber ops, digital risk, and third-party risk—**trade-off**: quote-only pricing; package structure requires careful scope modeling.
-
-
-
-- **[Mandiant Threat Intelligence](https://www.mandiant.com/)**
-
-  **Frontline intelligence** from incident response experts. **Free tier**: **Mandiant Advantage Free** includes dynamic actor and malware pivot views with MITRE ATT&CK map, object explorer, indicator downloads (IP, domain, file hash, URL with maliciousness scoring), news analysis, quarterly threat briefings, and API access . **Security Operations** subscription adds up-to-the-minute actor/malware/vulnerability tracking and SOC alert correlation . **Fusion** subscription provides full unlimited access to all Mandiant intelligence including historical and predictive activity . **Pricing**: Quote-only for paid tiers. **Free tier**: Yes, substantial free tier. **Best for**: teams wanting intelligence grounded in real incident response—**trade-off**: full value requires paid subscriptions; free tier is lookup-focused.
-
-
-
-- **[Flashpoint](https://flashpoint.io/)**
-
-  **Threat intelligence platform** with illicit community collection. **Core Packages**: **Cyber Threat Intelligence** (Flashpoint Ignite, API access, account takeover credentials, vulnerability intelligence, curated alerts, integrations); **Vulnerability** (415,000+ vulnerabilities including non-CVEs without scanning); **Physical Security** (Echosec, global event monitoring) . **Pricing**: **Quote-only**; claims **482% ROI in 6 months** and **$500M fraud loss avoided per year** . **Free tier**: None. **Best for**: CTI and fraud teams needing broad illicit-source coverage—**trade-off**: enterprise pricing; value depends on dark web relevance to your threat model.
-
-
-
-- **[Palo Alto Unit 42](https://www.paloaltonetworks.com/)**
-
-  **Threat intelligence and offensive security services**. **Unit 42 Continuous Frontier AI Defense** (available on OpenAI Marketplace) is an always-on, agentic offensive security service that discovers, validates, and accelerates remediation of exposures using defender-grade models including GPT-5.6-Cyber . Internal deployment uncovered **two years' worth of exposures in three weeks**; customer assessments found exposures in **100% of organizations**, with **37% high/critical severity**; over **two-thirds of third-party exposures had no known CVE** . **Pricing**: Annual subscription; quote-only. **Free tier**: None. **Best for**: enterprises wanting AI-driven exposure validation alongside threat intelligence—**trade-off**: premium service; requires Palo Alto engagement.
-
-
-
-- **[Microsoft Defender Threat Intelligence](https://www.microsoft.com/security/)**
-
-  **Threat intelligence integrated into Defender XDR and Sentinel**. **Standalone MDTI portal retired**; intelligence now available in Defender portal (Intelligence Explorer, Intel profiles) and Sentinel via free Microsoft Threat Intelligence connector . **Pricing**: Available at **no additional MDTI charge within Defender XDR and Sentinel**, but requires eligible Defender XDR or Sentinel license—**not universally free** . **Free tier**: Limited community version existed; now integrated into licensed products. **Best for**: Microsoft security customers wanting intelligence embedded in existing workflows—**trade-off**: requires Defender XDR/Sentinel licensing; standalone portal no longer available.
-
-
-
-- **[IntSights (Rapid7)](https://www.rapid7.com/)**
-
-  **External threat protection** within Rapid7's security operations platform. **Features**: Cloud-based external threat detection; deep and dark web harvesting; network traffic pattern analysis; complete exposure monitoring . **Pricing**: Quote-only; no public pricing. Gartner reviewers note **quality has declined since Rapid7 acquisition** and **limited API integrations with SOC orchestration** . **Free tier**: None. **Best for**: Rapid7 customers wanting external threat visibility integrated with their platform—**trade-off**: post-acquisition quality concerns; limited customization for large organizations.
-
-
-
-- **[ZeroFox](https://www.zerofox.com/)**
-
-  **Digital risk protection** platform with threat intelligence. **Features**: Brand, executive, attack surface, and threat intelligence protection; **Global Disruption Network** with 80+ provider ecosystem for takedowns; analyst-vetted alerts with context; built-in remediation workflows . Claims **287% ROI** (Forrester TEI study) and **M+ disruptions** . **Pricing**: **Outcome-based, not per-headcount**—intelligence shared across teams . **Free tier**: None. **Best for**: organizations prioritizing brand protection and takedown capability alongside intelligence—**trade-off**: digital risk focus; less depth in pure adversary tracking.
-
-
-
-- **[Cybersixgill](https://cybersixgill.com/)**
-
-  **Dark web intelligence** platform with Investigative Portal. **Features**: One of the largest dark web data lakes; real-time alerts; threat actor analysis with profiles and history; access to exclusive sources including Genesis Marketplace; automatic translations; API capabilities . PeerSpot rating **8.8/10**; users recommend for IOC to threat advisories and dark web intelligence . **Pricing**: **Good ROI due to favorable pricing model and lower setup costs** per PeerSpot . **Free tier**: Not specified. **Best for**: teams needing deep dark web coverage—**trade-off**: onboarding requires careful false positive tuning; portal-centric.
-
-
-
-- **[ThreatConnect](https://threatconnect.com/)**
-
-  **Threat intelligence operations platform (TI Ops)**. **Features**: Ingests hundreds of internal and external sources; enriches with AI; aligns to intelligence requirements and MITRE ATT&CK gaps; operationalizes across SOC, IR, hunt, and vulnerability teams . **Pricing**: **Quote-only**; no public plans . **Free tier**: Trial listed; free version unclear. **Best for**: enterprises wanting intelligence operations alignment across teams—**trade-off**: no transparent pricing; requires sales engagement.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[MISP](https://github.com/MISP/MISP)**
-
-  **Open Source Threat Intelligence Platform** (AGPL-3.0) — **the most widely deployed open-source threat intelligence sharing platform**, used by security teams, CERTs, and national agencies worldwide . **Features**: **IOC management and correlation**—store, correlate, and share indicators of compromise; **sharing communities** with granular distribution controls; **taxonomies and galaxies** for structured classification; **STIX/TAXII support**; **MISP Workflows** for automation; **MISP Modules** for expansion and enrichment . **Tech stack**: PHP, MySQL. **Deploy**: Self-hosted (Docker, packages). **Trade-off**: **UI feels dated**; complex for small teams; sharing requires community trust and governance. **Best for**: organizations needing to participate in intelligence sharing communities—the de facto standard for ISACs, CERTs, and threat sharing groups.
-
-
-
-- **[OpenCTI](https://github.com/OpenCTI-Platform/opencti)**
-
-  **Open Cyber Threat Intelligence Platform** (Apache-2.0) — **the most capable open-source knowledge management platform for CTI**, built on STIX 2.1 . **Features**: **Structured knowledge base** of threat actors, campaigns, malware, tools, and indicators with relationships; **STIX 2.1 native**—all data modeled in the standard; **connectors** for MISP, MITRE ATT&CK, VirusTotal, AlienVault, and more; **visualization** with graphs and timelines; **role-based access control**; **export to STIX, CSV, PDF** . **Tech stack**: Python, GraphQL, Elasticsearch, Redis, RabbitMQ. **Deploy**: Self-hosted (Docker Compose). **Trade-off**: **Resource-heavy** (Elasticsearch, Redis, RabbitMQ); steeper learning curve than MISP for simple sharing. **Best for**: teams wanting a knowledge-centric CTI platform with rich relationships and STIX-native modeling—especially those building intelligence programs from the ground up.
-
-
-
-- **[IntelOwl](https://github.com/intelowlproject/IntelOwl)**
-
-  **Open-source intelligence enrichment platform** (AGPL-3.0) — **the best open-source tool for IOC enrichment at scale** . **Features**: **Enriches observables** (IPs, domains, hashes, URLs) with 100+ analyzers including VirusTotal, Shodan, AbuseIPDB, GreyNoise, and more; **REST API and web UI**; **supports multiple observable types**; **scan and analyze files**; **connector integrations** with MISP, OpenCTI, and SIEMs . **Tech stack**: Python, Django, Celery, RabbitMQ, PostgreSQL. **Deploy**: Self-hosted (Docker Compose). **Trade-off**: **Enrichment only**—not a full TIP for intelligence management or sharing; requires API keys for most analyzers. **Best for**: SOC teams wanting to enrich IOCs with multiple intelligence sources without a commercial platform.
-
-
-
-- **[Yeti](https://github.com/yeti-platform/yeti)**
-
-  **Platform for organizing observables and indicators** (Apache-2.0) — **the CTI-DFIR intersection tool**, designed for teams that need to track observables across investigations . **Features**: **Observable and indicator management**; **analysis and correlation**; **investigation workflows**; **integrations** with MISP and other tools; **REST API** . **Tech stack**: Python, MongoDB, Redis, Docker. **Deploy**: Self-hosted. **Trade-off**: **Smaller community than MISP or OpenCTI**; less active development; focused on DFIR workflows rather than broad sharing. **Best for**: incident response and threat hunting teams wanting a lightweight observable tracking platform alongside their TIP.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Threat Bus** — Threat intelligence dissemination layer (BSD-3-Clause). Routes intelligence between security systems; integrates with MISP, OpenCTI, and other tools . **Note**: **Dissemination layer, not a TIP**—does not replace MISP or OpenCTI for intelligence management; recent maintenance activity appears limited . **Best for**: teams needing efficient intelligence distribution between systems.
-
-- **TheHive (legacy)** — Collaborative incident response platform (AGPL-3.0 for v3/v4). **Note**: **TheHive 3 and 4 are no longer maintained or publicly distributed**—latest version is commercially distributed . **Do not adopt for new deployments.** **Best for**: historical reference only.
-
-
-
-**Frameworks for building custom systems**: Combine **OpenCTI** for knowledge management with **MISP** for sharing communities, **IntelOwl** for enrichment, and **Threat Bus** for dissemination—creating a complete open-source CTI stack. **None of these match Recorded Future's Intelligence Graph or Mandiant's incident response telemetry**, but for intelligence management, sharing, and enrichment, the open-source options are mature and production-proven.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, license (for open-source), and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Threat intelligence platforms handling sensitive intelligence data must comply with data protection regulations (GDPR, CCPA, etc.) and implement appropriate access controls for intelligence sharing and dark web collection.
-
-- **The "proprietary intelligence platform" vs. "sharing platform" vs. "knowledge management" vs. "enrichment" distinction is critical.** **CrowdStrike, Recorded Future, Mandiant, Flashpoint, Unit 42, Microsoft, IntSights, ZeroFox, Cybersixgill, and ThreatConnect** are **proprietary intelligence platforms**—they provide curated intelligence, analysis, and often finished reports . **MISP** is a **sharing platform**—it excels at IOC management and community sharing . **OpenCTI** is **knowledge management**—it models threat actors, campaigns, and relationships in STIX 2.1 . **IntelOwl** is **enrichment**—it adds context to observables but does not manage intelligence programs . **Yeti** is **CTI-DFIR**—it tracks observables across investigations . **Choose based on whether you need curated intelligence, sharing, knowledge management, or enrichment.**
-
-- **Microsoft retired standalone MDTI.** Intelligence is now embedded in Defender XDR and Sentinel—**available at no additional MDTI charge but requires eligible licensing** . **Do not plan to evaluate the standalone portal.**
-
-- **IntSights quality has reportedly declined since Rapid7 acquisition.** Gartner reviewers note reduced intel quality and limited API integrations . **Evaluate carefully before committing.**
-
-- **MISP and OpenCTI serve different primary purposes.** MISP is the standard for **sharing communities** (ISACs, CERTs); OpenCTI is the standard for **knowledge management** (STIX-native modeling, relationships) . **Many organizations run both**—MISP for sharing, OpenCTI for analysis.
-
-- **TheHive 3/4 is no longer maintained.** The current version is commercially distributed—**do not adopt for new open-source deployments** .
-
-- **Pricing opacity varies.** CrowdStrike publishes device-based pricing. Recorded Future, Mandiant (paid tiers), Flashpoint, Unit 42, IntSights, ZeroFox, Cybersixgill, and ThreatConnect require sales contact or quote requests. **Validate with direct vendor conversations against your intelligence requirements and team size.**
-
-- Self-hosted open-source solutions require proper infrastructure (Elasticsearch/Redis/RabbitMQ for OpenCTI, PHP/MySQL for MISP, Django/Celery for IntelOwl), security hardening, and ongoing maintenance. **Threat intelligence data is highly sensitive**—ensure your deployment meets your organization's security and sharing governance requirements before storing or distributing intelligence.
-
-
+# Awesome Cyber Threat Intelligence (CTI) 🛡️
+
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Cyber-Threat-Intelligence/pulls)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/ishandutta2007/Awesome-Cyber-Threat-Intelligence/graphs/commit-activity)
+[![Stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Cyber-Threat-Intelligence?style=social)](https://github.com/ishandutta2007/Awesome-Cyber-Threat-Intelligence)
+
+A curated collection of top **Cyber Threat Intelligence (CTI)** resources, enterprise **SaaS Threat Intelligence Platforms (TIP)**, and self-hosted **Open-Source CTI Projects**. 
+
+Designed for **SOC Analysts**, **Security Engineers**, **Threat Hunters**, **DFIR Practitioners**, and **Infosec Teams** engaged in:
+- 🎯 **Adversary Tracking & Threat Actor Profiling**
+- 🔍 **IOC Enrichment, Correlation & Feeds**
+- 🌐 **Dark Web & External Attack Surface Monitoring (EASM)**
+- 📊 **STIX/TAXII Standards & Threat Knowledge Graphs**
+- 🤝 **Information Sharing & ISAC Communities**
 
 ---
 
+## Table of Contents
 
+- [Quick Comparison & Overview](#quick-comparison--overview)
+- [Enterprise SaaS & Commercial Threat Intelligence Platforms](#enterprise-saas--commercial-threat-intelligence-platforms)
+- [Open-Source Threat Intelligence Platforms (TIP) & Tools](#open-source-threat-intelligence-platforms-tip--tools)
+  - [Core Open-Source Platforms](#core-open-source-platforms)
+  - [Dissemination & Investigation Frameworks](#dissemination--investigation-frameworks)
+- [Recommended Open-Source CTI Architecture Stack](#recommended-open-source-cti-architecture-stack)
+- [How to Choose the Right CTI Tool](#how-to-choose-the-right-cti-tool)
+- [How to Contribute](#how-to-contribute)
+- [Disclaimer & Guidelines](#disclaimer--guidelines)
 
-**Made for CTI analysts, SOC teams, and organizations building transparent threat intelligence solutions.**
+---
 
-Let's make Cyber Threat Intelligence more open, data-driven, and adversary-aware.
+## Quick Comparison & Overview
+
+### SaaS & Enterprise CTI Platforms Pricing & Capabilities
+
+| Platform | Category / Focus | Free Tier & Limits | Pricing Model | Key Strength |
+| :--- | :--- | :--- | :--- | :--- |
+| **[CrowdStrike Falcon Intelligence](https://www.crowdstrike.com/)** | Endpoint Telemetry & Threat Hunting | **Yes**: Falcon Go Free (up to 100 devices; includes basic intel & hunting) | Paid plans start at $14.99/device/month (Falcon Pro); Falcon Enterprise $19.99/mo; Complete $59.99–$184.99/yr; expansion packs separate | Tight integration with endpoint telemetry, automated sandbox analysis |
+| **[Recorded Future](https://www.recordedfuture.com/)** | Intelligence Graph & All-Source CTI | **No** (Quote / POC only) | Custom Quote (Core, Professional, Elite tiers) | Massive automated web/dark-web collection, AI-driven Intelligence Graph |
+| **[Mandiant Threat Intelligence](https://www.mandiant.com/)** | Frontline IR Telemetry & Actor Tracking | **Yes**: Mandiant Advantage Free (dynamic actor pivot, MITRE ATT&CK maps, indicator lookups/downloads, API access) | Custom Quote (Security Operations & Fusion tiers) | Elite frontline breach response insights and actor attribution |
+| **[Flashpoint](https://flashpoint.io/)** | Illicit Communities & Fraud Intelligence | **No** | Custom Quote | Unrivaled illicit community and underground forum access |
+| **[Palo Alto Unit 42](https://www.paloaltonetworks.com/)** | Offensive AI Defense & Exposure Assessment | **No** | Annual subscription; Quote-only | Agentic offensive AI discovery and frontline incident triage |
+| **[Microsoft Defender Threat Intelligence](https://www.microsoft.com/security/)** | XDR & SIEM Embedded Intel | **No standalone free tier** (Embedded with Defender XDR / Sentinel licenses) | Included with eligible Microsoft Defender / Sentinel licensing | Native ingestion into Sentinel and Microsoft 365 Defender workflows |
+| **[IntSights (Rapid7)](https://www.rapid7.com/)** | External Threat Protection & Dark Web | **No** | Custom Quote | Rapid external exposure alerts directly connected into Rapid7 ecosystem |
+| **[ZeroFox](https://www.zerofox.com/)** | Digital Risk Protection & Takedowns | **No** | Outcome-based custom pricing | Automated global takedowns and brand abuse disruption |
+| **[Cybersixgill](https://cybersixgill.com/)** | Dark Web & Underground Cybercrime Data | **No** (Trial upon request) | Subscription-based; Custom Quote | Comprehensive automated dark web data lake with real-time scraping |
+| **[ThreatConnect](https://threatconnect.com/)** | Threat Intelligence Operations (TI Ops) | **No** (Enterprise demo/trial available) | Custom Quote | Multi-source ingestion, playbook automation, and MITRE ATT&CK mapping |
+
+---
+
+## Enterprise SaaS & Commercial Threat Intelligence Platforms
+
+### [CrowdStrike Falcon Intelligence](https://www.crowdstrike.com/)
+- **Overview**: Leader in the Gartner Magic Quadrant for Cyberthreat Intelligence Technologies. Integrates actionable intelligence natively with endpoint telemetry.
+- **Key Capabilities**: Automated malware detonation, IOC enrichment, sandbox integration, adversary profiles, and threat hunting correlation.
+- **Free Tier**: **Falcon Go** provides free tier coverage for up to 100 devices including Threat Intelligence & Hunting.
+- **Pricing**: Commercial tiers start at $14.99/device/month (Falcon Pro), $19.99 (Falcon Enterprise), and $59.99–$184.99/device annually (Falcon Complete). Falcon Intelligence Expansion Pack available as add-on.
+- **Best For**: Organizations prioritizing intelligence coupled directly with endpoint detection and response (EDR/XDR).
+
+### [Recorded Future](https://www.recordedfuture.com/)
+- **Overview**: Enterprise-grade all-source intelligence platform powered by an AI-driven real-time Intelligence Graph.
+- **Key Capabilities**: External threat hunting, digital risk protection (DRP), third-party risk analysis, and automated brand tracking across surface, deep, and dark web.
+- **Pricing**: Quote-only based on three modular tiers: *Core*, *Professional*, and *Elite*.
+- **Best For**: Large security operations centers (SOCs) wanting broad predictive intelligence and comprehensive risk visibility.
+
+### [Mandiant Threat Intelligence](https://www.mandiant.com/)
+- **Overview**: Premier cyber threat intelligence grounded in real-world breach response, reverse engineering, and frontline telemetry.
+- **Key Capabilities**: In-depth threat actor dossiers, dynamic adversary tracking mapped to MITRE ATT&CK, vulnerability prioritization, and IOC scoring.
+- **Free Tier**: **Mandiant Advantage Free** provides indicator lookups, MITRE ATT&CK matrix views, threat actor summaries, and API access.
+- **Pricing**: Quote-based subscriptions (*Security Operations* and *Fusion*).
+- **Best For**: Cyber defense teams needing deep forensic insights and adversary attribution based on actual incident response casework.
+
+### [Flashpoint](https://flashpoint.io/)
+- **Overview**: Specialized threat intelligence platform focused on illicit communities, dark web marketplaces, and vulnerability intelligence.
+- **Key Capabilities**: Account takeover (ATO) credential monitoring, non-CVE vulnerability database (415k+ entries), fraud intelligence, and physical security tracking (Echosec).
+- **Pricing**: Quote-only enterprise licenses.
+- **Best For**: Fraud units, threat intelligence teams, and brand protection specialists monitoring underground threat actor operations.
+
+### [Palo Alto Unit 42](https://www.paloaltonetworks.com/)
+- **Overview**: Elite threat intelligence, offensive security research, and continuous AI-driven exposure assessment.
+- **Key Capabilities**: Continuous Frontier AI Defense, autonomous attack surface testing, proactive hunting, and real-time incident response telemetry.
+- **Pricing**: Custom enterprise quote.
+- **Best For**: Organizations looking for proactive AI exposure validation alongside elite threat intelligence services.
+
+### [Microsoft Defender Threat Intelligence (MDTI)](https://www.microsoft.com/security/)
+- **Overview**: Threat intelligence natively integrated into Microsoft Defender XDR and Microsoft Sentinel SIEM.
+- **Key Capabilities**: Intelligence Explorer, raw and finished threat profiles, automated infrastructure tracking, and free Sentinel data connectors.
+- **Pricing**: Included with qualifying Defender XDR and Microsoft Sentinel enterprise plans (standalone portal retired).
+- **Best For**: Enterprises invested in the Microsoft 365 and Azure security ecosystem.
+
+### [IntSights (Rapid7)](https://www.rapid7.com/)
+- **Overview**: External threat protection and digital risk management within Rapid7's Insight platform.
+- **Key Capabilities**: Surface, deep, and dark web scraping, credential exposure detection, and perimeter exposure identification.
+- **Pricing**: Custom enterprise quote.
+- **Best For**: Existing Rapid7 customers seeking automated external threat feeds.
+
+### [ZeroFox](https://www.zerofox.com/)
+- **Overview**: External attack surface management and digital risk protection (DRP) featuring an active takedown network.
+- **Key Capabilities**: Phishing domain teardowns, social media spoof protection, executive digital protection, and automated threat disruption.
+- **Pricing**: Outcome-based custom pricing model.
+- **Best For**: Brand security, executive protection, and automated takedowns of impersonating infrastructure.
+
+### [Cybersixgill](https://cybersixgill.com/)
+- **Overview**: Real-time automated dark web threat intelligence platform with expansive historical archives.
+- **Key Capabilities**: Covert forum collection, automated translation, threat actor chatter tracking, and API feeds into SIEM/SOAR.
+- **Pricing**: Custom annual subscription.
+- **Best For**: Analysts who need early warning intelligence from deep and dark web threat forums.
+
+### [ThreatConnect](https://threatconnect.com/)
+- **Overview**: Threat Intelligence Operations (TI Ops) platform unifying intelligence ingestion, scoring, and orchestration.
+- **Key Capabilities**: Aggregation across dozens of threat feeds, automated IOC enrichment, MITRE ATT&CK alignment, and SOC playbook integration.
+- **Pricing**: Quote-only enterprise licensing.
+- **Best For**: Mature SOC/CTI teams orchestrating multi-source threat data into actionable defense mechanisms.
+
+---
+
+## Open-Source Threat Intelligence Platforms (TIP) & Tools
+
+### Core Open-Source Platforms
+
+#### [MISP - Malware Information Sharing Platform](https://github.com/MISP/MISP)
+- **License**: AGPL-3.0 | **Stack**: PHP, MySQL
+- **Description**: The gold-standard open-source platform for sharing, correlating, and storing IOCs across organizations, CERTs, and ISACs worldwide.
+- **Key Features**: Granular cryptographic distribution controls, MISP taxonomies/galaxies, native STIX/TAXII support, automated feed syncing, and an extensive module ecosystem.
+- **Best For**: Organizations participating in community intelligence-sharing rings or building private sharing networks.
+
+#### [OpenCTI](https://github.com/OpenCTI-Platform/opencti)
+- **License**: Apache-2.0 | **Stack**: Python, Node.js, GraphQL, Elasticsearch, Redis, RabbitMQ
+- **Description**: The industry-leading open-source cyber threat intelligence knowledge management platform, designed entirely on the **STIX 2.1** object model.
+- **Key Features**: Visual relationship graphs, attack campaigns/actor tracking, timeline analysis, connector ecosystem (MISP, VirusTotal, AlienVault, MITRE), and robust RBAC.
+- **Best For**: Teams building an intelligence-led security program requiring knowledge graphs, complex entity modeling, and STIX 2.1 compliance.
+
+#### [IntelOwl](https://github.com/intelowlproject/IntelOwl)
+- **License**: AGPL-3.0 | **Stack**: Python, Django, Celery, RabbitMQ, PostgreSQL
+- **Description**: High-throughput automated observable enrichment and OSINT analysis engine.
+- **Key Features**: Query 100+ analyzers (VirusTotal, AbuseIPDB, GreyNoise, Shodan, URLScan) with a single API call, file sandbox analysis, and direct OpenCTI/MISP integration.
+- **Best For**: Security operations teams needing rapid, multi-engine observable triage and automated enrichment pipelines.
+
+#### [Yeti](https://github.com/yeti-platform/yeti)
+- **License**: Apache-2.0 | **Stack**: Python, FastAPI, MongoDB, Redis
+- **Description**: Lightweight observable organization platform optimized for the intersection of Digital Forensics and Incident Response (DFIR) and CTI.
+- **Key Features**: Fast indicator organization, investigation graphing, automated data feeds, and simple REST API endpoints.
+- **Best For**: DFIR analysts and threat hunters tracking custom IOCs across active investigations without heavyweight TIP complexity.
+
+---
+
+### Dissemination & Investigation Frameworks
+
+- **[Threat Bus](https://github.com/tenzir/threatbus)** (BSD-3-Clause): Dissemination bus that routes intelligence between security tools, connecting platforms like OpenCTI and MISP with endpoint sensors and SIEMs.
+- **TheHive** (Historical Note): Popular open-source incident response tool (v3/v4 were AGPL-3.0); note that TheHive v5+ has moved to commercial distribution models.
+
+---
+
+## Recommended Open-Source CTI Architecture Stack
+
+For organizations building an end-to-end self-hosted Threat Intelligence pipeline without commercial licensing costs, the battle-tested modern open-source stack is:
+
+```mermaid
+flowchart LR
+    A["Raw Feeds & Scrapers\n(AlienVault OTX, URLhaus, Shodan)"] --> B["IntelOwl\n(Automated Enrichment)"]
+    B --> C["OpenCTI\n(STIX 2.1 Knowledge Base & Graph)"]
+    C <--> D["MISP\n(Sharing Communities & ISACs)"]
+    C --> E["SIEM / EDR / SOAR\n(Splunk, Wazuh, Shuffle)"]
+    D --> E
+```
+
+1. **Ingestion & Enrichment**: **[IntelOwl](https://github.com/intelowlproject/IntelOwl)** collects observables and queries 100+ threat intelligence APIs.
+2. **Knowledge Modeling & Analysis**: **[OpenCTI](https://github.com/OpenCTI-Platform/opencti)** models threat actors, malware families, and TTPs in STIX 2.1.
+3. **Information Sharing**: **[MISP](https://github.com/MISP/MISP)** synchronizes and shares high-fidelity IOCs with external CERTs, sector ISACs, and partners.
+4. **Actionable Enforcement**: Filtered indicators flow directly into SIEM/EDR detection rules.
+
+---
+
+## How to Choose the Right CTI Tool
+
+| Use Case | Recommended Solution | Rationale |
+| :--- | :--- | :--- |
+| **Community Sharing & ISAC Sync** | **[MISP](https://github.com/MISP/MISP)** | Established global standard for trusted threat intelligence sharing. |
+| **Adversary & TTP Knowledge Modeling** | **[OpenCTI](https://github.com/OpenCTI-Platform/opencti)** | Best-in-class STIX 2.1 graphing and MITRE ATT&CK integration. |
+| **Fast IOC Enrichment & Triage** | **[IntelOwl](https://github.com/intelowlproject/IntelOwl)** | Orchestrates dozens of OSINT and API analyzers simultaneously. |
+| **Incident Response Telemetry & APT Analysis** | **[Mandiant](https://www.mandiant.com/)** | Unsurpassed human adversary research from real incident response. |
+| **All-Source Enterprise Intelligence Graph** | **[Recorded Future](https://www.recordedfuture.com/)** | Automated web-scale collection and predictive risk scoring. |
+| **Takedowns & External Brand Protection** | **[ZeroFox](https://www.zerofox.com/)** | Rapid automated disruption of phishing and domain squatting. |
+
+---
+
+## How to Contribute
+
+Contributions are welcome! Help keep this cyber threat intelligence directory accurate and up to date:
+
+1. Fork this repository.
+2. Create a new branch: `git checkout -b add-threat-tool`.
+3. Add your entry following the established markdown schema (include tool name, website/repo link, license/pricing, and 1–2 sentence objective summary).
+4. Commit your changes and submit a Pull Request.
+
+---
+
+## Disclaimer & Guidelines
+
+- **Community-Curated**: This list is for educational, defensive, and research purposes. Inclusion does not imply official endorsement.
+- **Regulatory Compliance**: Threat intelligence systems ingesting dark web or leaked database data must adhere to relevant compliance and privacy laws (e.g., GDPR, CCPA).
+- **Infrastructure Requirements**: Self-hosting modern platforms (OpenCTI, MISP) requires proper operational security, regular backups, and dedicated infrastructure (Elasticsearch, Redis, Relational DBs).
+
+---
+
+*Curated with ❤️ for the global cybersecurity and threat intelligence defense community.*
