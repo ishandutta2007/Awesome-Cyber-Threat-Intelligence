@@ -30,7 +30,7 @@ Designed for **SOC Analysts**, **Security Engineers**, **Threat Hunters**, **DFI
 - [Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
 - [Enterprise SaaS & Commercial Threat Intelligence Platforms](#-enterprise-saas--commercial-threat-intelligence-platforms)
 - [Open-Source Threat Intelligence Platforms (TIP) & Tools](#-open-source-threat-intelligence-platforms-tip--tools)
-  - [Core Open-Source Projects (Ranked by GitHub Stars)](#-core-open-source-projects-ranked-by-github-stars)
+  - [Core Open-Source Projects (Ranked by GitHub_Stars)](#-core-open-source-projects-ranked-by-github-stars)
   - [Dissemination & Frameworks](#-dissemination--frameworks)
 - [Recommended Open-Source CTI Architecture Stack](#-recommended-open-source-cti-architecture-stack)
 - [How to Choose the Right CTI Tool](#-how-to-choose-the-right-cti-tool)
@@ -70,11 +70,11 @@ Sorted by company size (market capitalization / acquisition valuation, descendin
 
 ## ⚡ Open-Source Threat Intelligence Platforms (TIP) & Tools
 
-### 🌟 Core Open-Source Projects (Ranked by GitHub Stars)
+### 🌟 Core Open-Source Projects (Ranked by GitHub_Stars)
 
-Sorted strictly by GitHub Star counts (descending) 🌟:
+Sorted strictly by GitHub Stars_Counts (descending) 🌟:
 
-| Open-Source Project | GitHub Stars Badge | License & Stack | Description & Core Use Case |
+| Open-Source Project | GitHub_Stars_Badge | License & Stack | Description & Core Use Case |
 | :--- | :--- | :--- | :--- |
 | **[Sigma](https://github.com/SigmaHQ/sigma)** | [![Sigma Stars](https://img.shields.io/github/stars/SigmaHQ/sigma?style=social&color=white)](https://github.com/SigmaHQ/sigma/stargazers) | `CC-BY-4.0` <br> `YAML / Python` | **Generic Signature Format for SIEM Systems**: The industry standard for describing log events and threat-detection signatures in an open, vendor-neutral rule format. |
 | **[OpenCTI](https://github.com/OpenCTI-Platform/opencti)** | [![OpenCTI Stars](https://img.shields.io/github/stars/OpenCTI-Platform/opencti?style=social&color=white)](https://github.com/OpenCTI-Platform/opencti/stargazers) | `Apache-2.0` <br> `Python / GraphQL / Elasticsearch` | **Unified CTI Knowledge Management**: The leading STIX 2.1-native open-source platform for mapping adversary TTPs, campaigns, observables, and threat-actor relationships into intuitive graph structures. |
